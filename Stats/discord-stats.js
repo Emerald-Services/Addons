@@ -26,15 +26,15 @@ module.exports.commands = [
       const guild = interaction.guild;
       const statsCategory = guild.channels.cache.find(
         (category) =>
-          category.name === config.discordStatsAddon.StatsCategory ||
-          category.id === config.discordStatsAddon.StatsCategory
+          category.name === config.StatsCategory ||
+          category.id === config.StatsCategory
       );
 
       if (!statsCategory) {
         const errorEmbed = new Discord.MessageEmbed()
           .setTitle("Invalid Category")
           .setDescription(
-            `${supportbot.InvalidChannel}\n\n**Category Required:** \`${config.discordStatsAddon.StatsCategory}\``
+            `${supportbot.InvalidChannel}\n\n**Category Required:** \`${config.StatsCategory}\``
           )
           .setColor(supportbot.ErrorColour);
 
@@ -56,21 +56,21 @@ module.exports.commands = [
         });
 
         const userCountChannel = await guild.channels.create(
-          `${config.discordStatsAddon.UserCount_Name} ${userCount}`,
+          `${config.UserCount_Name} ${userCount}`,
           {
             type: "GUILD_VOICE",
           }
         );
 
         const channelCountChannel = await guild.channels.create(
-          `${config.discordStatsAddon.ChannelCount_Name} ${channelCount}`,
+          `${config.ChannelCount_Name} ${channelCount}`,
           {
             type: "GUILD_VOICE",
           }
         );
 
         const roleCountChannel = await guild.channels.create(
-          `${config.discordStatsAddon.RoleCount_Name} ${roleCount}`,
+          `${config.RoleCount_Name} ${roleCount}`,
           {
             type: "GUILD_VOICE",
           }
@@ -112,13 +112,13 @@ module.exports.commands = [
 
         setInterval(() => {
           userCountChannel.setName(
-            `${config.discordStatsAddon.UserCount_Name} ${userCount}`
+            `${config.UserCount_Name} ${userCount}`
           );
           channelCountChannel.setName(
-            `${config.discordStatsAddon.ChannelCount_Name} ${channelCount}`
+            `${config.ChannelCount_Name} ${channelCount}`
           );
           roleCountChannel.setName(
-            `${config.discordStatsAddon.RoleCount_Name} ${roleCount}`
+            `${config.RoleCount_Name} ${roleCount}`
           );
         }, 30000);
       } catch (error) {
