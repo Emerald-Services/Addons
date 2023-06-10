@@ -6,11 +6,14 @@
     <br>
 </h1>
 
-
 Hello Developers!
 So I assume you're reading this because you're Developer interested in creating an addon or using an addon created by other developers correct? Well you're in the right place. First of all you'll need to understand and have knowledge with Node/Discord.js. This is what SupportBot is based off.
 
+# List of current addons in this repository.
 
+- Levels  
+- Poll
+- ...
 
 
 ## How to enable the addons?
