@@ -13,6 +13,7 @@ So I assume you're reading this because you're Developer interested in creating 
 
 - Levels  
 - Poll
+- Stats
 - ...
 
 
