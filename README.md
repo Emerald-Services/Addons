@@ -11,9 +11,9 @@ So I assume you're reading this because you're Developer interested in creating 
 
 # List of current addons in this repository.
 
-- [Levels](https://github.com/Emerald-Services/Addons/Levels/README.md)  
-- [Polls](https://github.com/Emerald-Services/Addons/Polls/README.md)
-- [Stats](https://github.com/Emerald-Services/Addons/Stats/README.md)
+- [Levels](https://github.com/Emerald-Services/Addons/blob/main/Levels/README.md)  
+- [Polls](https://github.com/Emerald-Services/Addons/blob/main/Polls/README.md)
+- [Stats](https://github.com/Emerald-Services/Addons/blob/main/Stats/README.md)
 - ...
 
 
