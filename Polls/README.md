@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <a><img src="[https://i.imgur.com/tzi3d7Q.png](https://cdn.discordapp.com/attachments/1097239914560622772/1097239914690654390/sb-addons-png.png)"></a>
+    <a href="https://github.com/Emerald-Services/Addons"><img src="https://media.discordapp.net/attachments/1097239914560622772/1097239914690654390/sb-addons-png.png?width=1439&height=479"></a>
     <br>
     SupportBot Polls addon
     <br>
