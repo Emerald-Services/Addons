@@ -14,6 +14,7 @@ So I assume you're reading this because you're Developer interested in creating 
 - [Levels](https://github.com/Emerald-Services/Addons/blob/main/Levels/README.md)  
 - [Polls](https://github.com/Emerald-Services/Addons/blob/main/Polls/README.md)
 - [Stats](https://github.com/Emerald-Services/Addons/blob/main/Stats/README.md)
+- [Reload](https://github.com/Emerald-Services/Addons/blob/main/Reload/README.md)
 - ...
 
 
