@@ -29,7 +29,7 @@ module.exports.commands = [
     permissions: ["SEND_MESSAGES"],
     async run(interaction, config) { // Pass the config object here
       // Retrieve the admin role name or ID from the configuration
-      const adminRoleNameOrID = supportbot.adminRole;
+      const adminRoleNameOrID = supportbot.admin;
 
       // Check if the user invoking the command has the admin role
       const member = interaction.guild.members.cache.get(interaction.user.id);
