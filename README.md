@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <a href="https://github.com/Emerald-Services/SupportBot"><img src="https://i.imgur.com/tzi3d7Q.png"></a>
+    <a href="https://github.com/Emerald-Services/SupportBot"><img src="https://i.imgur.com/cuadAYv.png"></a>
     <br>
     SupportBot Addons
     <br>
