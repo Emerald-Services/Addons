@@ -17,6 +17,8 @@ So I assume you're reading this because you're Developer interested in creating 
 | [Stats](https://github.com/Emerald-Services/Addons/blob/main/Stats/README.md) | ✅ | ❌ |
 | [Reload](https://github.com/Emerald-Services/Addons/blob/main/Reload/README.md) | ✅ | ❌ |
 
+# Other Addons:
+We have created a marketplace where people can upload there addons with ease, you can find it [here](https://community.emeraldsrv.com/)
 
 
 
