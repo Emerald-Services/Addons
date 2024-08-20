@@ -10,12 +10,14 @@ Hello Developers!
 So I assume you're reading this because you're Developer interested in creating an addon or using an addon created by other developers correct? Well you're in the right place. First of all you'll need to understand and have knowledge with Node/Discord.js. This is what SupportBot is based off.
 
 # List of current addons in this repository.
+| Name | V7 | V8 |
+| ---- | --- | --- |
+| [Levels](https://github.com/Emerald-Services/Addons/blob/main/Levels/README.md)  | ✅ | ❌ |
+| [Polls](https://github.com/Emerald-Services/Addons/blob/main/Polls/README.md) | ✅ | ❌ |
+| [Stats](https://github.com/Emerald-Services/Addons/blob/main/Stats/README.md) | ✅ | ❌ |
+| [Reload](https://github.com/Emerald-Services/Addons/blob/main/Reload/README.md) | ✅ | ❌ |
 
-- [Levels](https://github.com/Emerald-Services/Addons/blob/main/Levels/README.md)  
-- [Polls](https://github.com/Emerald-Services/Addons/blob/main/Polls/README.md)
-- [Stats](https://github.com/Emerald-Services/Addons/blob/main/Stats/README.md)
-- [Reload](https://github.com/Emerald-Services/Addons/blob/main/Reload/README.md)
-- ...
+
 
 
 ## How to enable the addons?
@@ -52,39 +54,26 @@ const { Command, Event } = require("../Structures/Addon");
 Now lets set-up addon handler
 
 ```js
-module.exports.commands = [
-
-  new Command({
-    name: "your-cmd-name",
-    description: "your-command-description",
+module.exports = new Command({
+    name: "addon",
+    description: "This is a sample addon!",
     options: [],
-    permissions: ["SEND_MESSAGES"],
+    permissions: ["Administrator"],
+  
     async run(interaction) {
-
-      const Embed = new Discord.MessageEmbed()
-        .setDescription("Hello World!")
-        .setColor(supportbot.InfoColour);
-
+      let disableCommand = true;
+  
+      const PingEmbed = new Discord.EmbedBuilder()
+        .setDescription(
+          `This is a sample addon.\n\nPong! \`${interaction.client.ws.ping} ms\``
+        )
+        .setColor(supportbot.Embed.Colours.General);
+  
       interaction.reply({
-        embeds: [Embed],
+        embeds: [PingEmbed],
       });
-
     },
-  }),
-
-];
+  });
 ```
-
-**Event Example**
-
-```js
-module.exports.events = [
-
-  new Event("ready", async (client) => {
-    console.log("Bot started!");
-  }), 
-];
-```
-
 
 If you want, you can always share your own addon by creating a pull request to this rep.
